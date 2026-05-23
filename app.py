@@ -11,7 +11,7 @@ from agency_ledger import create_ledger_entry, format_entry_for_panel
 
 MODEL = os.environ.get("ANTHROPIC_MODEL", "claude-sonnet-4-6")
 MAX_TOKENS = 512
-STORE_EXCERPT = True
+STORE_EXCERPT = False
 
 SORAYA_WELCOME = (
     "Hi. I'm Soraya.\n\n"

@@ -4,6 +4,7 @@ emoji: 🧭
 colorFrom: blue
 colorTo: green
 sdk: gradio
+sdk_version: 6.14.0
 python_version: "3.10"
 app_file: app.py
 pinned: false
@@ -63,13 +64,14 @@ app.py
 ## Repository layout
 
 ```text
-soraya-space/
-  README.md
-  app.py
-  router.py
-  prompts.py
-  agency_ledger.py
-  requirements.txt
+README.md
+app.py
+router.py
+prompts.py
+agency_ledger.py
+requirements.txt
+examples/
+  smoke_tests.json
 ```
 
 ## Hugging Face Space setup
