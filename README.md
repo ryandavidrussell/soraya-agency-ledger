@@ -119,6 +119,16 @@ Do not store API keys in public variables, source code, README text, commits, or
 5. `Can you give me legal advice about this contract?`
    - Expected: escalation / boundary response, no legal advice, suggests qualified professional review.
 
+## Deterministic Routing Smoke Tests
+
+`examples/smoke_tests.json` encodes the expected `selected_route` and `soraya_mode` for each smoke test prompt. `scripts/run_smoke_tests.py` runs every prompt through `router.route_user_turn` and verifies the deterministic routing layer produces the expected outputs. Run it from the repo root:
+
+```bash
+python scripts/run_smoke_tests.py
+```
+
+The runner prints a concise pass/fail report and exits non-zero if any case fails, so it is safe to use in pre-deploy checks.
+
 ## Deployment Status
 
 Private MVP deploy approved after local/code review. Public demo should wait until routing behavior, escalation behavior, and Agency Ledger formatting pass the smoke tests.
