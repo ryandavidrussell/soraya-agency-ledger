@@ -13,6 +13,8 @@ license: apache-2.0
 
 # Soraya — Executive Function Infrastructure
 
+[![Smoke Tests](https://github.com/ryandavidrussell/soraya-agency-ledger/actions/workflows/smoke-tests.yml/badge.svg)](https://github.com/ryandavidrussell/soraya-agency-ledger/actions/workflows/smoke-tests.yml)
+
 Soraya is a behavioral MVP for agency-preserving human-AI collaboration.
 
 It is not trying to prove model novelty. It is trying to prove a governed interaction pattern: route first, coach second, preserve user agency always.

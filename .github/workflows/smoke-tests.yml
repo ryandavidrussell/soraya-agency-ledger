@@ -1,0 +1,24 @@
+name: Smoke Tests
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  smoke-tests:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+
+      - name: Compile sources
+        run: python -m py_compile app.py router.py prompts.py agency_ledger.py scripts/run_smoke_tests.py
+
+      - name: Run router smoke tests
+        run: python scripts/run_smoke_tests.py
