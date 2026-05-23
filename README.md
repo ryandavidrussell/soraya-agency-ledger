@@ -21,6 +21,13 @@ It is not trying to prove model novelty. It is trying to prove a governed intera
 
 > Soraya helps people start, structure, verify, and follow through without surrendering judgment to the machine.
 
+## Companion Documents
+
+- [Soraya white paper (v0.3 draft)](docs/soraya-whitepaper-v0.3.pdf)
+- [Soraya / Kaleidoworks Partner Brief — May 2026](docs/soraya-partner-brief.md)
+
+These documents describe intent and direction. The code in this repository is the behavioral MVP described in the white paper's MVP Implementation Path; it is not a complete realization of every concept those documents discuss.
+
 ## Prototype Boundary
 
 Soraya is a research and demonstration prototype for agency-preserving AI interaction design.
